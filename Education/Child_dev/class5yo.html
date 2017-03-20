@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bilingual Children</title>
+	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/bootstrap-social.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">	
+</head>
+<body>
+  <header >
+  <nav class="navbar  navbar-fixed-top"  id="header-nav"> 
+     <div class="container">
+     	<div class="navbar-header">
+     	          <a href="index.html" class="pull-left visible-md visible-lg">
+	            <div id="logo-img" ></div>
+	          </a>
+	          <div class="navbar-brand nav ">
+	            <a href="index.html"><h2>Bilingual Children</h2></a>
+	          </div>
+	           <div class="navbar-toggle collapsed navbar-left">
+     		<ul class="nav navbar-nav  navigation-lists">
+     			<li>
+     				<a data-toggle="modal" id="loginButton1"><span class="glyphicon glyphicon-log-in">  Login</span></a>
+     			</li>
+     		</ul><!--end of login link to modal for xs-->
+     		</div>
+     		<div class="nav navbar-left">
+	    <button id="btn-main-menu" type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#main-menu-items" aria-expanded="false" >
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   </div>
+     	</div><!--end of navbar header-->
+     	<div class="navbar collapse navbar-collapse"  id="main-menu-items" >
+     		<ul class=" nav navbar-nav navigation-lists">
+     			<li >
+     				<a href="index.html"><i class="fa fa-star"></i>   Home</a>
+     			</li>
+     			<li >
+     				<a href="aboutus.html"><i class="fa fa-university"></i>  About Project</a>
+     			</li>
+     			<li class="dropdown ">
+     				<a  href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-book"></i>  Blogs<span class="caret"></span></a>
+     				<ul class="dropdown-menu navigation-lists">
+     					<li ><a href="blog1.html">Blog1</a></li>
+     					<li><a href="blog1.html">Blog2</a></li>
+     					<li><a href="blog1.html">Blog3</a></li>
+     					<li><a href="blog1.html">Blog4</a></li>
+     					<li><a href="blog1.html">Blog5</a></li>
+     				</ul>
+     			</li>
+     			<li class="dropdown">
+     				<a href="classes.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-graduation-cap"></i>  Classes<span class="caret"></span></a>
+     				<ul class="dropdown-menu navigation-lists">
+     					<li><a href="class5yo.html">Class 2 yo</a></li>
+     					<li><a href="class5yo.html">Class 3 yo</a></li>
+     					<li><a href="class5yo.html">Class 4 yo</a></li>
+     					<li class="active "><a href="#">Class 5 yo</a></li>
+     					<li><a href="class5yo.html">Individual </a></li>
+     				</ul>
+     			</li>
+     			<li class="nav-link disabled">
+     				<a href="#"><i class="fa fa-envelope-o"></i>  Contact Us</a>
+     			</li>
+     			<li class="nav-link disabled">
+     				<a href="#"><i class="fa fa-sort-alpha-asc"></i>>  Directory</a>
+     			</li>
+     		</ul><!--end of ul navbar-->
+     		<div>
+	     		<ul class="nav navbar-nav navbar-right navigation-lists">
+	     			<li>
+	     				<a data-toggle="modal" id="loginButton"><span class="glyphicon glyphicon-log-in">  Login</span></a>
+	     			</li>
+	     		</ul><!--end of login link to modal-->
+     		</div><!--end of login div link-->
+	     </div><!--end of collapsed navbar-->
+	</div><!--end of container nav-->     
+  </nav><!--end of navbar--> 
+
+  <!--Modal-->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="js-login-title">Login </h4>
+                </div><!--end of modal header-->
+                <div class="modal-body">
+                    <form role="search">
+                    	<div class="input group">
+                    		<div class="form-group-row">
+                    			<label for="inputEmail" class="col-sm-2 col-form-label ">Email</label>
+                    			<div class="col-sm-9">
+                    				<input type="email" class="form-control" id="inputEmail" placeholder="email@yourdomain.com">
+                    			</div><!--end of col input-->
+                    		</div><!--end of form group row-->
+                    		<div class="form-group-row" id="js-password-div">
+                    			<label for="inputPassword" class="col-sm-2 col-form-label " >Password</label>
+                    			<div class="col-sm-9">
+                    				<input type="text" class="form-control" id="inputPassword" placeholder="password">
+                    			</div><!--end of col input-->
+                    		</div><!--end of form group row-->
+                    		<div class="form-group-row" id="js-repeat-password-div">
+                    			<label for="retypePassword" class="col-sm-2 col-form-label " >Retype Password</label>
+                    			<div class="col-sm-9">
+                    				<input type="text" class="form-control" id="retypePassword" placeholder="retype password">
+                    			</div><!--end of col input-->
+                    		</div><!--end of form group row-->
+                    	</div><!--end of input group-->
+                    	<div class="input group">
+                    	<div class="form-group-row"></div>
+                    		<div class="form-group-row">
+                    			<button class="btn btn-primary" id="js-btn-recover">Recover password</button>
+                    			<button class="btn btn-primary" id="js-btn-register">Register account</button>
+                    			<button class="btn btn-primary " id="js-sign-in">Sign in</button>
+                    			<span id="js-checkbox-span"><input type="checkbox" id="js-password-checkbox"> <span   class="custom-control-description"> Remember me</span></span>
+                    			<button type="button" class="btn btn-default float-right" id="cancelButtonL">Cancel</button>
+                    		</div><!--end of form group row-->
+                    		<div class="modal-footer" id="js-login-links">
+                    			<a  href="#" id="js-forgetPassword">Forgot password</a>
+                    			<a href="#" id="js-newRegistration">Register</a>
+                    		</div><!--end of modal footer-->
+                    	</div><!--end of input group-->
+                      </form> <!--end of login form-->
+                    </div><!--end of modal body-->
+                </div><!--end of modal content-->
+            </div><!--end of modal dialog-->
+        </div><!--end of login modal-->
+  </header>
+
+  <div class="container">
+      <div class="row row-content" id="class-kids">
+        <div class="col-xs-12 ">
+            <h2>Class structure</h2>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-info">
+                    <div class="panel-heading" role="tab" id="class-structure">
+                        <h3 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#class5yo" aria-expanded="true" aria-controls="class5yo">
+                                Class from 5 to 6 years <small> learning through game</small></a>
+                            </h3>
+                        </div><!--end of panel heading-->
+                        <div role="tabpanel" class="panel-collapse collapse in" id="class5yo"    aria-labelledby="class-structure">
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div><!--end of panel body-->
+                            </div><!--end of tab panel-->
+                        </div><!--end of panel default-->
+                        <div class="panel panel-info">
+                            <div class="panel-heading" role="tab" id="class-learn">
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#class-learn-5" aria-expanded="true" aria-controls="class-learn-5">
+                                        What do we learn <small> details</small></a>
+                                    </h3>
+                                </div><!--end of panel heading-->
+                                <div role="tabpanel" class="panel-collapse collapse" id="class-learn-5"    aria-labelledby="class-learn">
+                                    <div class="panel-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div><!--end of panel body-->
+                                    </div><!--end of tab panel-->
+                                </div><!--end of panel default-->
+                                <div class="panel panel-info">
+                                    <div class="panel-heading" role="tab" id="heading-howto">
+                                        <h3 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#howto" aria-expanded="true" aria-controls="howto">
+                                                How to enroll<small> enrollment details</small></a>
+                                            </h3>
+                                        </div><!--end of panel heading-->
+                                        <div role="tabpanel" class="panel-collapse collapse" id="howto"    aria-labelledby="heading-howto">
+                                            <div class="panel-body">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div><!--end of panel body-->
+                                            </div><!--end of tab panel-->
+                                        </div><!--end of panel default-->
+                                        <div class="panel panel-info">
+                                            <div class="panel-heading" role="tab" id="heading-faq">
+                                                <h3 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#faq" aria-expanded="true" aria-controls="faq">
+                                                        Frequently asked questions</a>
+                                                    </h3>
+                                                </div><!--end of panel heading-->
+                                                <div role="tabpanel" class="panel-collapse collapse" id="faq"    aria-labelledby="heading-faq">
+                                                    <div class="panel-body">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                        </div><!--end of panel body-->
+                                                    </div><!--end of tab panel-->
+                                                </div><!--end of panel default-->
+                                            </div><!--end of panel group-->
+                                        </div>
+                                    </div><!--end of row-->
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div data-tockify-component="mini" data-tockify-calendar="oleg.markoff"></div>
+                                            <script data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+                                        </div>
+                                        <hr class="visible-xs">
+                                        <div class="col-xs-12 col-md-8">
+                                            <table class="table table-hover" id="class-schedule">
+                                            <caption><h4 class="text-center">Class schedule</h4></caption>
+                                              <thead>
+                                                <tr>
+                                                  <th>Class name</th>
+                                                  <th>Day of week</th>
+                                                  <th>Start time</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td>1 - 2 year old</td>
+                                              <td>Monday</td>
+                                              <td>9 am - 10 am</td>
+                                          </tr>
+                                          <tr>                              
+                                              <td>2 - 3 year old</td>
+                                              <td>Tuesday</td>
+                                              <td>9 am - 10 am</td>
+                                          </tr>
+                                          <tr>
+                                              <td>3 - 4 year old</td>
+                                              <td>Monday</td>
+                                              <td>11 am - 12 pm</td>
+                                          </tr>
+                                          <tr>
+                                              <td>4 - 5 year old</td>
+                                              <td>Thursday</td>
+                                              <td>9 am - 10 am</td>
+                                          </tr>
+                                          <tr>
+                                              <td>5 - 6 year old</td>
+                                              <td>Monday</td>
+                                              <td>10 am - 11 am</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div><!--end of container-->
+
+
+  <footer class="panel-footer footer-container">
+     <div class="container">
+        <div class="row responsive">
+	<div class="col-xs-12 col-sm-4 text-center" id="section-links">
+	
+		<a class="btn btn-social-icon btn-facebook" href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+		<a class="btn btn-social-icon btn-google-plus"  href="www.google.com/+"><i class="fa fa-google-plus"></i></a>
+		<a class="btn btn-social-icon btn-linkedin" href="www.linkendin.com/in"><i class="fa fa-linkedin"></i></a>
+		<a class="btn btn-social-icon btn-youtube" href="www.youtube.com"><i class="fa fa-youtube"></i></a>
+		<hr class="visible-xs">
+	</div>	
+
+	<div class="col-xs-12 col-sm-4 text-center"  id="section-address">
+		<h4> Our Address</h4>
+		<span id="js-message-footer"></span><br>
+		PO Box 1270<br>
+		Tallaman NY<br>
+		<i class="fa fa-phone"> 201-638-7297</i><br>
+		<a href="mailto:admin@vikaraskina.com"><i class="fa fa-envelope-o"></i>  E-mail us</a>
+		<hr class="visible-xs">
+	</div>
+	<div class="col-xs-12 col-sm-4 text-center"  id="section-map">
+			<h4>Our Location</h4>
+			<div id="canvas-for-google-map"><iframe  src="https://www.google.com/maps/embed/v1/place?q=Fair+Lawn,+NJ,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+			</div>
+			<div>
+			<a class="embedded-map-html" rel="nofollow" href="http://www.interserver-coupons.com" id="get-map-data">http://www.interserver-coupons.com</a>
+			</div>
+		<hr class="visible-xs">
+	</div>	
+        </div><!--end of footer row div-->
+        <div id="copyright-text" class="text-center">&copy; Copyright Oleg Markoff 2016</div>
+     </div><!--end of footer container div-->
+  </footer>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=324653d8-c376-a66a-77c5-20e5622bb61d&c=embedded-map-html&u=1479076988" defer="defer" async="async"></script>
+  <script>
+  //login modal buttons
+$("#loginButton, #loginButton1").click(function(){
+	$("#loginModal").modal("show");
+});
+$("#cancelButtonL").click(function(){
+	$("#loginModal").modal("hide");
+});
+$("#js-forgetPassword").click(function(){
+	$("#js-password-div").hide();
+	$("#js-password-checkbox").hide();
+	$("#cancelButtonL").hide();
+	$("#js-checkbox-span").hide();
+	$("#js-login-links").hide();
+	$("#js-sign-in").hide();
+	$("#js-login-title ").html("Recover password");
+	$("#js-btn-recover").show();
+});
+$("#js-newRegistration").click(function(){
+	$("#js-password-checkbox").hide();
+	$("#cancelButtonL").hide();
+	$("#js-checkbox-span").hide();
+	$("#js-login-links").hide();
+	$("#js-sign-in").hide();
+	$("#js-login-title").html("Register");
+	$("#js-btn-register").show();
+	$("#js-repeat-password-div").show();
+});
+$("#js-btn-recover").click(function(){
+	$("#loginModal").modal("hide");
+	$("#js-password-div").show();
+	$("#js-password-checkbox").show();
+	$("#cancelButtonL").show();
+	$("#js-checkbox-span").show();
+	$("#js-login-links").show();
+	$("#js-sign-in").show();
+	$("#js-login-title ").html("Login");
+	$("#js-btn-recover").hide();
+});
+$("#js-btn-register").click(function(){
+	$("#loginModal").modal("hide");
+	$("#js-password-checkbox").show();
+	$("#cancelButtonL").show();
+	$("#js-checkbox-span").show();
+	$("#js-login-links").show();
+	$("#js-sign-in").show();
+	$("#js-login-title h4").html("Login");
+	$("#js-btn-register").hide();
+	$("#js-repeat-password-div").hide();
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "bilingual",
+  "homepage": "https://github.com/mawglih/coursera-projects/Web_Mich/capstone",
+  "authors": [
+    "Oleg Markoff <mawglih@gmail.com>"
+  ],
+  "description": "Bilingual Children - Capstone Project for Web Design for Everybody UM",
+  "main": "index.html",
+  "keywords": [
+    "bilingual",
+    "children",
+    "education",
+    "early",
+    "children",
+    "development"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

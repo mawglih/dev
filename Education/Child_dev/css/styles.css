@@ -1,0 +1,160 @@
+*{
+
+}
+body{
+	background-color: #B8F7D4;
+	padding-top: 100px;
+}
+/*header*/
+#header-nav{
+	background-color: #6FE7DB;
+	border: 0;
+	border-radius: 0;
+}
+ .dropdown>ul{
+ 	background-color: #6FE7D0;
+ 	border: 0;
+	border-radius: 0;
+	text-shadow: 1px 1px 1px #FFF;
+ }
+ul.navbar-nav>li>a, ul.navigation-lists>li>a{
+	color: #835AF1;
+}
+#btn-main-menu{
+	background-color: #835AF1;
+}
+.icon-bar{
+	background-color: #6FE7DB;
+}
+#main-menu-items>ul{
+	text-shadow: 1px 1px 1px #FFF;
+}
+.navigation-lists{
+	padding-top: 10px;
+}
+.navigation-lists >li>a:hover{
+	background: #7FA6EE;
+	color: black;
+}
+#logo-img{
+	background: url('../img/logo1.png') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
+	position: absolute;
+	left:10px;
+	top:10px;
+}
+.navbar-brand h2{
+	color: black;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #FDF7FF;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+	padding-top: 10px;
+	font-family: 'Indie Flower', cursive;
+}
+#loginButton1{
+	position: absolute;
+	right:10px;
+	top:10px;
+}
+.dropdown-menu>li>a{
+	text-align: center;
+}
+
+/*end header*/
+/*modal login*/
+#inputEmail, #inputPassword, #retypePassword{
+	margin-bottom: 5px;
+}
+.form-group-row{
+	padding-top: 5px;
+}
+.aligned-label{
+	padding-top: 5px;
+}
+#cancelButtonL{
+	float: right;
+}
+#forgetPassword, #newRegistration{
+	text-decoration: underline;
+}
+#js-btn-recover, #js-btn-register, #js-repeat-password-div{
+	display: none;
+}
+/*end of modal login*/
+
+/*jumbotron*/
+.jumbotron{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.carousel{
+	background-color: #835AF1;
+}
+.carousel-caption {
+	text-align: right;;
+}
+.carousel .item {
+  	height: 300px;
+
+}
+.carousel .item img {
+	left: 0;
+	max-width: 500px;
+	position: absolute;
+	top: 0;
+}
+/*end jumbotron*/
+/*main*/
+.img-thumbnail{
+	max-height: 200px;
+}
+#class-schedule{
+	padding-left: 20px;
+}
+/*end main*/
+/*footer*/
+.footer-container{
+	background-color: #6FE7DB;
+	border-top: 0;
+	width: 100%;
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	border-top: 0;
+}
+#section-address{
+	padding-top:40px;
+}
+#section-links{
+	padding-top: 80px;
+}
+#canvas-for-google-map{
+	overflow:hidden;
+	width:100%;
+	height:200px;
+	max-width:100%;
+}
+#canvas-for-google-map>img{
+	max-width:none!important;
+	background:none!important;
+}
+#canvas-for-google-map>iframe{
+	height:100%;
+	width:100%;
+	border:0;
+}
+#copyright-text{
+	font-family: 'Indie Flower', cursive;
+	padding-top: 20px;
+}
+/*end footer*/
+/*media*/
+@media (min-width: 767px) {
+	#section-links, #section-address{
+		margin-bottom: 20px;
+	}
+}
