@@ -1,0 +1,58 @@
+<form name="signupForm" novalidate ng-submit="signupCtrl.submit(signupForm)">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+  <div class="form-group" ng-class="{'has-error' : signupForm.firstname.$invalid && signupForm.firstname.$touched}"> <!--First  Name field -->
+      <label class="control-label " for="firstname">First Name<span class="asteriskField">*</span></label>
+      <input class="form-control" name="firstname" type="text" 
+      placeholder="Your First Name" ng-model="signupCtrl.user.firstname" ng-minlength="1" required>
+      <span ng-if="signupForm.firstname.$invalid && signupForm.firstname.$touched">First Name Required
+       </span>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-6">
+  <div class="form-group" ng-class="{'has-error' :signupForm.lastname.$invalid && signupForm.lastname.$touched}"> <!-- Last Name field -->
+      <label class="control-label " for="lastname">Last Name<span class="asteriskField">*</span></label>
+      <input class="form-control" name="lastname" type="text" 
+      placeholder="Your Last Name" ng-model="signupCtrl.user.lastname" ng-minlength="1" required>
+      <span ng-if="signupForm.lastname.$invalid && signupForm.lastname.$touched">Last Name Required
+       </span>
+    </div>
+  </div>
+  </div><!--row-->
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+    <div class="form-group" ng-class="{'has-error' : signupForm.email.$invalid && signupForm.email.$touched}"> 
+      <label class="control-label" for="email">Email<span class="asteriskField">*</span></label>
+      <input class="form-control" name="email" type="text"
+      placeholder="Your email address" ng-model="signupCtrl.user.email" required>
+      <span ng-if="signupForm.email.$invalid && signupForm.email.$touched">Must be a valid email address uname@domain format
+      </span>
+    </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+    <div class="form-group" ng-class="{'has-error' :signupForm.phone.$invalid && signupForm.phone.$touched}"> <!-- Phone field -->
+      <label class="control-label" for="phone">Phone<span class="asteriskField">*</span></label>
+       <input class="form-control" type="text" name="phone" 
+       placeholder="Phone number as: ###-###-####" ng-model="signupCtrl.user.phone" pattern="(\d{3})-(\d{3})-(\d{4})" required>
+          <span ng-if="signupForm.phone.$invalid && signupForm.phone.$touched">
+            Please enter a valid phone number as: ###-###-####!
+          </span>
+    </div>
+    </div>
+  </div><!--row-->
+  <div class="row">
+    <div class="col-xs-12 col-md-4">
+      <div class="form-group"> <!-- Subject field -->
+        <label class="control-label " for="subject">Favorite Dish</label>
+        <input class="form-control" name="favorite" type="text" placeholder="dish short name : L1"  ng-model="signupCtrl.user.favorite_shortname"/>
+      </div>
+    </div>
+  </div>
+  <div class="form-group"> <!--  button !-->
+    <button ng-disabled="signupForm.$invalid"  class="btn btn-primary">Sign Up</button>
+    <span ng-if="signupCtrl.success">Your information has been saved!</span> 
+    <a href="index.html"><button type="dismiss" class="btn btn-default" >Cancel</button></a>
+  </div>  
+  </div>
+</form>
