@@ -1,9 +1,9 @@
 [{
         "name": "cert1",
-        "imgPath": "/doctor/images/doctor/cert1.png"
+        "imgPath": "/doctor/images/doctor/cert1.jpg"
     },
     {
         "name": "cert2",
-        "imgPath": "/doctor/images/doctor/cert2.png"
+        "imgPath": "/doctor/images/doctor/cert2.jpg"
     }
 ]
