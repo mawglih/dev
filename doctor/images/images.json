@@ -1,41 +1,41 @@
 [{
         "name": "img1",
-        "imgPath": "/doctor/images/doctor/img1.png"
+        "imgPath": "/doctor/images/doctor/img1.jpg"
     },
     {
         "name": "img2",
-        "imgPath": "/doctor/images/doctor/img2.png"
+        "imgPath": "/doctor/images/doctor/img2.jpg"
     },
     {
         "name": "img3",
-        "imgPath": "/doctor/images/doctor/img3.png"
+        "imgPath": "/doctor/images/doctor/img3.jpg"
     },
     {
         "name": "img4",
-        "imgPath": "/dev/doctor/images/doctor/img4.png"
+        "imgPath": "/dev/doctor/images/doctor/img4.jpg"
     },
     {
         "name": "img5",
-        "imgPath": "images/doctor/img5.png"
+        "imgPath": "images/doctor/img5.jpg"
     },
     {
         "name": "img6",
-        "imgPath": "dev/doctor/images/doctor/img6.png"
+        "imgPath": "dev/doctor/images/doctor/img6.jpg"
     },
     {
         "name": "img7",
-        "imgPath": "../images/doctor/img7.png"
+        "imgPath": "../images/doctor/img7.jpg"
     },
     {
         "name": "img8",
-        "imgPath": "/doctor/images/doctor/img8.png"
+        "imgPath": "/doctor/images/doctor/img8.jpg"
     },
     {
         "name": "img9",
-        "imgPath": "/doctor/images/doctor/img9.png"
+        "imgPath": "/doctor/images/doctor/img9.jpg"
     },
     {
         "name": "img10",
-        "imgPath": "/doctor/images/doctor/img10.png"
+        "imgPath": "/doctor/images/doctor/img10.jpg"
     }
 ]
