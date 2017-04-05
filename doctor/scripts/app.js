@@ -43,6 +43,9 @@ function config($routeProvider) {
         .when('/estimate', {
             templateUrl: 'views/estimate.html'
         })
+        .when('/testim', {
+            templateUrl: 'views/testim.html'
+        })
         .otherwise({
             redirectTo: '/'
         });

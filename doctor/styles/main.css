@@ -52,10 +52,6 @@ body {
     background-color: #ffe6ff;
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
-    .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-    }
 }
 
 
@@ -100,17 +96,16 @@ a {
     color: #fff;
 }
 
-#nav-list {
-    a:link {
+#nav-list a:link {
         color: 0;
     }
-    a:hover {
+#nav-list a:hover {
         color: 0;
     }
-    a:active {
+#nav-list a:active {
         color: blue;
     }
-}
+
 
 #brand-id {
     color: #4dff4d;
@@ -172,6 +167,11 @@ button.navbar-toggle {
     position: absolute;
     bottom: 0;
     left: 0;
+}
+#button-jumbo4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 #background-image {
@@ -288,4 +288,26 @@ button.navbar-toggle {
 }
 .white{
     color: #fff;
+}
+.testim{
+    background: #777;
+}
+
+.contact{
+    font-size: 150%;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+.svyaz{
+    background-color: #d279a6;
+    border: 2px #aaa solid;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
 }
