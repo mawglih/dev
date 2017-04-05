@@ -295,7 +295,7 @@ button.navbar-toggle {
 
 .contact{
     font-size: 150%;
-    border: 2px solid black;
+    border: 2px solid #aaa;
     border-radius: 20px;
     text-align: center;
     margin: 20px;

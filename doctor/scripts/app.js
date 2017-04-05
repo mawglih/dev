@@ -40,11 +40,10 @@ function config($routeProvider) {
             controller: 'ContactsCtrl',
             controllerAs: 'contacts'
         })
-        .when('/estimate', {
-            templateUrl: 'views/estimate.html'
-        })
         .when('/testim', {
-            templateUrl: 'views/testim.html'
+            templateUrl: 'views/testim.html',
+            controller: 'TestimCtrl',
+            controllerAs: 'testim'
         })
         .otherwise({
             redirectTo: '/'
